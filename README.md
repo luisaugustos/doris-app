@@ -1,151 +1,146 @@
-# VueJS Vuetify Vue Router Vuex - Basic Project Skeleton
 
-[![Author](http://img.shields.io/badge/author-@davellanedam-blue.svg?style=flat-square)](https://twitter.com/davellanedam)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/davellanedam/vue-skeleton-mvp/blob/master/LICENSE)
-[![Tag](https://img.shields.io/github/tag/davellanedam/vue-skeleton-mvp.svg?style=flat-square)](https://github.com/davellanedam/vue-skeleton-mvp/tags)
-[![Travis](https://img.shields.io/travis/com/davellanedam/vue-skeleton-mvp.svg?style=flat-square)]()
-[![npm downloads](https://img.shields.io/npm/dt/vue-skeleton-mvp.svg?style=flat-square\&label=npm%20downloads)]()
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3e7e1611c3b4a06a6c1df9391e3fe7a)](https://www.codacy.com/app/davellanedam/vue-skeleton-mvp?utm_source=github.com\&utm_medium=referral\&utm_content=davellanedam/vue-skeleton-mvp\&utm_campaign=Badge_Grade)
+<h2 align="center">
+  <br>
+  <a href="https://sas.usal.es/doris-plataforma-para-la-deteccion-la-mejora-y-optimizacion-del-proceso-de-monitorizacion-de-defectos-e-imperfecciones-en-las-carreteras-publicas-mediante-el-uso-drones/"><img src="https://sas.usal.es/wp-content/uploads/2022/03/DORIS.png" alt="DORIS" width="400"></a>
+</h1>
 
-## Getting started
+<br>
 
-This is a basic VueJs, Vuetify, Vue Router and Vuex skeleton written on JavaScript using async/await. Great for building a starter web app.
+## DORIS: Plataforma para la detección la mejora y optimización del proceso de monitorización de defectos e imperfecciones en las carreteras publicas mediante el uso drones.
 
-This project is created to help other developers create a **basic VueJS app in an easy way**. This basic example shows how powerful and simple JavaScript and VueJS can be. Do you want to contribute? Pull requests are always welcome to show more features.
+<br>
 
-## Buy me a coffee
+En los últimos años, las tareas de mantenimiento en las vías de transporte de uso público se han reducido drásticamente debido a la difícil situación económica que presentan muchos países. Estudios concluyen que se está experimentando un aumento de accidentes debido al mal estado del pavimento de la carretera, afectando incluso, al estado de los vehículos mediante la aparición de costosas averías. Actualmente, los procesos de detección de cualquier tipo de desperfecto en la vía son llevados a cabo manualmente o se basan en la utilización de un vehículo de carretera. El objetivo principal de este trabajo es el diseño de una plataforma distribuida que permita detectar desperfectos en las vías de transporte utilizando drones y mostrando los resultados de los clasificadores más importantes.
 
-Hi! I'm Daniel Avellaneda, I'm an open source enthusiast and devote my free time to building projects in this field.
+<br>
+<br>
 
-I'm the creator and maintainer of [node-express-mongodb-jwt-rest-api-skeleton](https://github.com/davellanedam/node-express-mongodb-jwt-rest-api-skeleton/blob/master/README.md) and [vue-skeleton-mvp](https://github.com/davellanedam/vue-skeleton-mvp/blob/master/README.md)
+<p align="center">
+    <a>
+        <img width="150" height="150" src="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-150x150.png 150w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-450x450.png 450w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-768x768.png 768w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-700x700.png 700w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-600x600.png 600w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-250x250.png 250w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-120x120.png 120w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09-512x512.png 512w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-09.png 1500w" sizes="(max-width: 150px) 100vw, 150px">
+    </a>
+    <a>
+        <img width="150" height="150" src="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-150x150.png 150w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-450x450.png 450w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-768x768.png 768w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-700x700.png 700w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-600x600.png 600w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-250x250.png 250w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-120x120.png 120w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11-512x512.png 512w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-11.png 1500w" sizes="(max-width: 150px) 100vw, 150px">
+    </a>
+    <a>
+        <img width="150" height="150" src="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-150x150.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-150x150.png 150w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-450x450.png 450w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-768x768.png 768w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-700x700.png 700w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-600x600.png 600w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-250x250.png 250w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-120x120.png 120w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13-512x512.png 512w, https://sas.usal.es/wp-content/uploads/2021/02/S-WEB-Goal-13.png 1500w" sizes="(max-width: 150px) 100vw, 150px">
+    </a>
+</p>
 
-These projects are a "starter web app kit" for any developer who wants to build their own app without starting from scratch: API + Frontend
 
-Both projects have been downloaded thousands of times by web developers around the world.
+<!--<p align="center">
+  <a href="https://badge.fury.io/js/electron-markdownify">
+    <img src="https://badge.fury.io/js/electron-markdownify.svg"
+         alt="Gitter">
+  </a>
+  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
+  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
+      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+  </a>
+  <a href="https://www.paypal.me/AmitMerchant">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 
-I'm doing my best to provide you a good experience when using my apps, so if you like what I'm doing and wish to say "thanks!", please buy me a coffee :coffee:
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-<a href="https://www.buymeacoffee.com/muGHf41NT" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-Feel free to send me a tweet <https://twitter.com/davellanedam>, share this with others or make a pull request
+## Key Features
 
-## Features
+* LivePreview - Make changes, See changes
+  - Instantly see what your Markdown documents look like in HTML as you create them.
+* Sync Scrolling
+  - While you type, LivePreview will automatically scroll to the current location you're editing.
+* GitHub Flavored Markdown  
+* Syntax highlighting
+* [KaTeX](https://khan.github.io/KaTeX/) Support
+* Dark/Light mode
+* Toolbar for basic Markdown formatting
+* Supports multiple cursors
+* Save the Markdown preview as PDF
+* Emoji support in preview :tada:
+* App will keep alive in tray for quick usage
+* Full screen mode
+  - Write distraction free.
+* Cross platform
+  - Windows, macOS and Linux ready.
 
-*   Vuetify
-*   Multiple environment ready (development, production).
-*   Vue router
-*   Vuex
-*   i18n ready.
-*   Google Analytics ready.
-*   Ready to add to home screen in iOS and Chrome, checks if there´s an app update every 2 hours and reloads page (When a web app is added as stand alone there´s no reload button in the browser so new .js files from a new build never get loaded)
-*   Landing page.
-*   Protected home page.
-*   Login.
-*   Signup.
-*   Forgot password.
-*   Account verification.
-*   User profile.
-*   Users admin area with CRUD operations.
-*   Cities admin area with CRUD operations.
-*   Testing with Cypress and mocha/chai.
-*   NPM script for keeping good source code formatting using prettier and ESLint.
-*   Use of ESLint for good coding practices.
-*   Use of prettier for beautiful format.
-*   Ability to refresh token
-*   JWT Tokens, make requests with a token after login with `Authorization` header with value `Bearer yourToken` where `yourToken` is the **signed and encrypted token** given in the response from the login process.
+## How To Use
 
-## Demo
-
-A demo of this Frontend is located at: <https://vue-demo.daniel-avellaneda.com>
-
-### Login credentials
-
-email: `admin@admin.com`\
-password: `12345`
-
-**IMPORTANT:** Database resets every 30 mins like "12:00am, 12:30am, 1:00am" and so on. So anything you do will be lost after a short time.
-
-Demo is also linked to a Node.js express.js MongoDB JWT REST API project that shows how this frontend can be integrated to an API.\
-Repo is here: <https://github.com/davellanedam/node-express-mongodb-jwt-rest-api-skeleton>\
-Running demo is here: <https://api-demo.daniel-avellaneda.com>
-
-## How to install
-
-### Using Git (recommended)
-
-1.  Clone the project from github. Change "myproject" to your project name.
-
-```bash
-git clone https://github.com/davellanedam/vue-skeleton-mvp.git ./myproject
-```
-
-### Using manual download ZIP
-
-1.  Download repository
-2.  Uncompress to your desired directory
-
-### Install npm dependencies after installing (Git or manual download)
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-cd myproject
-npm install
-npm update
+# Clone this repository
+$ git clone https://github.com/amitmerchant1990/electron-markdownify
+
+# Go into the repository
+$ cd electron-markdownify
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
-## VERY IMPORTANT
+> **Note**
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-This project uses Vue Router HTML5 History Mode, this means when you are in development mode you can hit Cmd+R (mac) or F5 (Windows) to reload the page and it will work, but when the project is built you will have problems, so will need to do a small change in your web server to make that work. Please read the official Vue Router documentation here: <https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations>
 
-### Compiles and hot-reloads for development
+## Download
 
-```bash
-npm run serve
-```
+You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
 
-### Compiles and minifies for production
+## Emailware
 
-```bash
-npm run build
-```
+Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
-### Run your tests
+## Credits
 
-```bash
-npm run test
-```
+This software uses the following open source packages:
 
-### Lints and fixes files
+- [Electron](http://electron.atom.io/)
+- [Node.js](https://nodejs.org/)
+- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [showdown](http://showdownjs.github.io/showdown/)
+- [CodeMirror](http://codemirror.net/)
+- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
+- [highlight.js](https://highlightjs.org/)
 
-```bash
-npm run lint
-```
+## Related
 
-### Formatting markdown files
+[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
 
-```bash
-npm run remark
-```
+## Support
 
-### Run your end-to-end tests
+<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-```bash
-npm run test:e2e
-```
+<p>Or</p> 
 
-### Run your unit tests
+<a href="https://www.patreon.com/amitmerchant">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
-```bash
-npm run test:unit
-```
+## You may also like...
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## Bugs or improvements
-
-Feel free to report any bugs or improvements. Pull requests are always welcome.
+- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
+- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
 ## License
 
-This project is open-sourced software licensed under the MIT License. See the LICENSE file for more information.
+MIT
+
+---
+
+> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
+> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
+> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+
+-->

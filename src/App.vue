@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Toolbar />
+    <Toolbar v-if="!$route.meta.hideNavbar" />
     <v-main class="text-center">
       <loading />
       <v-container fluid>
@@ -9,7 +9,7 @@
         </transition>
       </v-container>
     </v-main>
-    <Footer />
+    <Footer v-if="!$route.meta.hideFooter" />
   </v-app>
 </template>
 

@@ -1,47 +1,58 @@
 <template v-slot:activator="{ on }">
   <div>
-    <v-app-bar flat>
+    <v-app-bar flat style="background-color: #0a134f" dark>
       <span class="hidden-md-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar"></v-app-bar-nav-icon>
       </span>
       <div class="headline text-uppercase ml-0">
         <div v-resize-text>
           <router-link
-            :to="{ name: 'home' }"
+            :to="{ name: 'about' }"
             tag="span"
             style="cursor: pointer"
             v-if="isTokenSet"
-            >{{ appTitle }}</router-link
           >
+            <v-img
+              src="/assets/doris_white.png"
+              contain
+              max-height="40"
+              max-width="100"
+              class="mx-2"
+            ></v-img>
+          </router-link>
           <router-link
-            :to="{ name: 'landing' }"
+            :to="{ name: 'about' }"
             tag="span"
             style="cursor: pointer"
             v-else
-            >{{ appTitle }}</router-link
           >
+            <v-img
+              src="/assets/doris_white.png"
+              contain
+              max-height="40"
+              max-width="100"
+              class="mx-2"
+            ></v-img>
+          </router-link>
         </div>
       </div>
-      <v-spacer></v-spacer>
+
       <v-toolbar-items>
         <v-btn
           text
           v-for="(item, index) in menuItems"
           :key="index"
           :to="{ name: item.link }"
-          exact
           :class="['hidden-sm-and-down', item.class]"
         >
           <v-icon>{{ item.icon }}</v-icon>
           &nbsp;{{ item.title }}
         </v-btn>
-        <v-list-item class="hidden-sm-and-down">
-          <v-icon>mdi-weather-sunny</v-icon>
-          <v-list-item-action>
-            <v-switch v-model="isDark" inset></v-switch>
-          </v-list-item-action>
-          <v-icon class="pl-2">mdi-weather-night</v-icon>
-        </v-list-item>
+      </v-toolbar-items>
+
+      <div class="flex-grow-1"></div>
+
+      <v-toolbar-items>
         <v-menu v-if="admin" offset-y>
           <template v-slot:activator="{ on }">
             <v-btn v-on="on" text class="btnAdmin hidden-sm-and-down">
@@ -227,7 +238,8 @@ export default {
             link: 'home',
             icon: 'mdi-home',
             class: 'btnHome'
-          },
+          }
+          /*
           {
             title: this.$t('menuItems.ABOUT'),
             link: 'about',
@@ -240,20 +252,34 @@ export default {
             icon: 'mdi-face',
             class: 'btnProfile'
           }
+          */
         ]
       }
       return [
         {
           title: this.$t('menuItems.HOME'),
-          link: 'landing',
+          link: 'home',
           icon: 'mdi-home'
         },
         {
-          title: this.$t('menuItems.ABOUT'),
-          link: 'about',
-          icon: 'mdi-help-circle-outline',
+          title: 'Relatorios',
+          link: 'admin-cities',
+          icon: 'mdi-map-marker',
           class: 'btnAbout'
         },
+        {
+          title: 'Usuarios',
+          link: 'admin-users',
+          icon: 'mdi-account',
+          class: 'btnAbout'
+        },
+        {
+          title: 'Configurações',
+          link: 'about',
+          icon: 'mdi-cog',
+          class: 'btnAbout'
+        }
+        /*
         {
           title: this.$t('menuItems.LOGIN'),
           link: 'login',
@@ -266,6 +292,7 @@ export default {
           icon: 'mdi-plus-circle-outline',
           class: 'btnLogin'
         }
+        */
       ]
     }
   },

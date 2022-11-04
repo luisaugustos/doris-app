@@ -3,7 +3,7 @@ export default [
     path: '/admin/cities',
     name: 'admin-cities',
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () =>
       import(
@@ -14,7 +14,7 @@ export default [
     path: '/admin/users',
     name: 'admin-users',
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     },
     component: () =>
       import(

@@ -1,8 +1,19 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <Heading :title="$t('login.TITLE')" />
-      <Description :description="$t('login.DESCRIPTION')" />
+      <v-flex xs12 sm12 class="text-center">
+        <v-img
+          class="mx-auto"
+          style="align-items: center; margin: 20px 0"
+          src="/assets/doris.svg"
+          height="300"
+        />
+      </v-flex>
+      <v-flex xs12 text-xs-center mt-5 mb-3 class="text-center">
+        <v-img src="/assets/doris_pb.svg" contain height="200px"></v-img>
+      </v-flex>
+      <v-flex xs12 text-xs-center mb-2>Plataforma</v-flex>
+      <!--<Description :description="$t('login.DESCRIPTION')" />-->
       <v-flex xs12 sm6 offset-sm3>
         <ValidationObserver v-slot="{ handleSubmit }">
           <form @submit.prevent="handleSubmit(submit)">
@@ -37,6 +48,10 @@
               </v-flex>
               <v-flex text-xs-center mt-5 mb-3>
                 <SubmitButton :buttonText="$t('login.LOGIN')" />
+                <v-btn color="error">
+                  <v-icon left> mdi-google </v-icon>
+                  Google
+                </v-btn>
               </v-flex>
               <v-flex text-xs-center>
                 <v-btn

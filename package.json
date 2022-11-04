@@ -1,15 +1,15 @@
 {
-  "name": "vue-skeleton-mvp",
-  "version": "5.0.20",
-  "description": "VueJS Vuetify Vue Router Vuex - Basic Project Skeleton - Starter Web App. Written on JavaScript using async/await.",
+  "name": "DORIS",
+  "version": "0.0.1",
+  "description": "DORIS: Plataforma para la detección la mejora y optimización del proceso de monitorización de defectos e imperfecciones en las carreteras publicas mediante el uso drones.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davellanedam/vue-skeleton-mvp.git"
+    "url": "https://github.com/luisaugustos/doris-app.git"
   },
   "scripts": {
     "generate-build-version": "node generate-build-version",
-    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && npm run generate-build-version && vue-cli-service build",
     "format": "prettier --write --config .prettierrc \"**/*.js\"",
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint --fix",
@@ -35,6 +35,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
     "date-fns": "^2.16.1",
+    "leaflet": "^1.9.2",
     "remark-cli": "^9.0.0",
     "vee-validate": "^3.4.5",
     "vue": "^2.6.12",
@@ -44,6 +45,7 @@
     "vue-meta": "^2.4.0",
     "vue-resize-text": "^0.1.1",
     "vue-router": "^3.4.9",
+    "vue2-leaflet": "^2.7.1",
     "vuetify": "^2.4.3",
     "vuetify-confirm": "^2.0.6",
     "vuex": "^3.6.0"
@@ -67,13 +69,12 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.5.0",
     "faker": "^5.1.0",
-    "fibers": "^5.0.0",
     "husky": "^4.3.8",
     "istanbul-lib-coverage": "^3.0.0",
     "lint-staged": "^10.5.3",
     "nyc": "^15.1.0",
     "prettier": "^2.2.1",
-    "sass": "^1.32.5",
+    "sass": "^1.56.0",
     "sass-loader": "^10.1.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^4.3.3",

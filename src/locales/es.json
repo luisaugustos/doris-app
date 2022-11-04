@@ -119,8 +119,8 @@
     "CLOSE": "Cerrar"
   },
   "about": {
-    "TITLE": "Acerca de...",
-    "DESCRIPTION": "Esta página está disponible públicamente."
+    "TITLE": "DORIS: Plataforma para la detección la mejora y optimización del proceso de monitorización de defectos e imperfecciones en las carreteras publicas mediante el uso drones.",
+    "DESCRIPTION": "En los últimos años, las tareas de mantenimiento en las vías de transporte de uso público se han reducido drásticamente debido a la difícil situación económica que presentan muchos países. Estudios concluyen que se está experimentando un aumento de accidentes debido al mal estado del pavimento de la carretera, afectando incluso, al estado de los vehículos mediante la aparición de costosas averías. Actualmente, los procesos de detección de cualquier tipo de desperfecto en la vía son llevados a cabo manualmente o se basan en la utilización de un vehículo de carretera. El objetivo principal de este trabajo es el diseño de una plataforma distribuida que permita detectar desperfectos en las vías de transporte utilizando drones y mostrando los resultados de los clasificadores más importantes."
   },
   "login": {
     "TITLE": "Ingresar",

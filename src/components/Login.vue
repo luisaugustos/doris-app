@@ -1,20 +1,16 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-flex xs12 sm12 class="text-center">
-        <v-img
-          class="mx-auto"
-          style="align-items: center; margin: 20px 0"
-          src="/assets/doris.svg"
-          height="300"
-        />
-      </v-flex>
-      <v-flex xs12 text-xs-center mt-5 mb-3 class="text-center">
-        <v-img src="/assets/doris_pb.svg" contain height="200px"></v-img>
-      </v-flex>
-      <v-flex xs12 text-xs-center mb-2>Plataforma</v-flex>
-      <!--<Description :description="$t('login.DESCRIPTION')" />-->
-      <v-flex xs12 sm6 offset-sm3>
+      <v-flex class="login-box" xs12 sm4 offset-sm4>
+        <v-flex xs12 text-xs-center mt-5 mb-3 class="text-center">
+          <v-img src="/assets/doris_pb.svg" contain height="200px"></v-img>
+        </v-flex>
+        <v-flex xs12 text-xs-center mb-2
+          >DORIS: Plataforma para la detección la mejora y optimización del
+          proceso de monitorización de defectos e imperfecciones en las
+          carreteras publicas mediante el uso drones.</v-flex
+        >
+        <!--<Description :description="$t('login.DESCRIPTION')" />-->
         <ValidationObserver v-slot="{ handleSubmit }">
           <form @submit.prevent="handleSubmit(submit)">
             <v-layout column>
@@ -62,6 +58,17 @@
                   >{{ $t('login.FORGOT_PASSWORD') }}</v-btn
                 >
               </v-flex>
+              <v-row text-xs-center mt-5 mb-3 fill-height>
+                <v-col cols="8">
+                  <v-img
+                    src="/assets/sas_logo.png"
+                    style="margin-top: 15px"
+                  ></v-img>
+                </v-col>
+                <v-col cols="4">
+                  <v-img src="/assets/campus_logo.png"></v-img>
+                </v-col>
+              </v-row>
             </v-layout>
           </form>
         </ValidationObserver>
@@ -70,6 +77,15 @@
     </v-layout>
   </v-container>
 </template>
+
+<style scoped>
+.login-box {
+  margin-top: 20px;
+  background-color: #8080801c;
+  border-radius: 5px;
+  padding: 10px;
+}
+</style>
 
 <script>
 import router from '@/router'

@@ -20,5 +20,13 @@ export default [
       import(
         /* webpackChunkName: "admin-users" */ '@/components/AdminUsers.vue'
       )
+  },
+  {
+    path: '/admin/reports',
+    name: 'reports',
+    meta: {
+      requiresAuth: false
+    },
+    component: () => import('@/components/Reports.vue')
   }
 ]

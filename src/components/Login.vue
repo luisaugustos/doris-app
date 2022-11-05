@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-flex class="login-box" xs12 sm4 offset-sm4>
+      <v-flex class="login-box" xs12 sm6 offset-sm3>
         <v-flex xs12 text-xs-center mt-5 mb-3 class="text-center">
           <v-img src="/assets/doris_pb.svg" contain height="200px"></v-img>
         </v-flex>
@@ -58,7 +58,7 @@
                   >{{ $t('login.FORGOT_PASSWORD') }}</v-btn
                 >
               </v-flex>
-              <v-row text-xs-center mt-5 mb-3 fill-height>
+              <v-row text-xs-center mt-10 mb-3 fill-height>
                 <v-col cols="8">
                   <v-img
                     src="/assets/sas_logo.png"
@@ -83,7 +83,8 @@
   margin-top: 20px;
   background-color: #8080801c;
   border-radius: 5px;
-  padding: 10px;
+  padding: 0 70px;
+  padding-bottom: 30px;
 }
 </style>
 

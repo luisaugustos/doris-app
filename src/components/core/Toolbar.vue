@@ -263,7 +263,7 @@ export default {
         },
         {
           title: 'Relatorios',
-          link: 'admin-cities',
+          link: 'reports',
           icon: 'mdi-map-marker',
           class: 'btnAbout'
         },
@@ -274,7 +274,7 @@ export default {
           class: 'btnAbout'
         },
         {
-          title: 'Configurações',
+          title: 'Config',
           link: 'about',
           icon: 'mdi-cog',
           class: 'btnAbout'
